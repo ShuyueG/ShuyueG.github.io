@@ -135,7 +135,7 @@ strong {
 	font-weight: bold;
 }
 
-areatitle {
+.areatitle {
     margin: 0 0 .8em 0;
     padding: .5em;
     text-align: center;
@@ -386,3 +386,46 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+button {
+    font-family: Georgia, serif;
+    font-size: 100%;
+}
+    
+.collapsible {
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+
+}
+
+.active, .collapsible:hover {
+    background-color: #E5E5E5;
+}
+
+.collapsible:after {
+  content: 'Abstract +';
+  color: black;
+  font-weight: bold;
+  float: right;
+
+}
+
+.active:after {
+content: "Abstract −";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #E5E5E5;
+  text-align: justify;
+
+}
+
