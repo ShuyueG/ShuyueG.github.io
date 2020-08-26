@@ -389,17 +389,19 @@ table.imgtable, table.imgtable td {
 
 button {
     font-family: Georgia, serif;
-    font-size: 100%;
+    font-size: 100%;  
+    
 }
     
 .collapsible {
   background-color: white;
   cursor: pointer;
-  padding: 5px;
+  padding: 0px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
+  margin-left: auto;
 
 }
 
@@ -420,12 +422,13 @@ content: "Abstract −";
 }
 
 .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #E5E5E5;
-  text-align: justify;
-
+    padding-right: 18px;
+    padding-left: 18px;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #E5E5E5;
+    text-align: justify;
 }
 
