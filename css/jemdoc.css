@@ -135,23 +135,17 @@ strong {
 	font-weight: bold;
 }
 
-.areatitle {
+areatitle {
     margin: 0 0 .8em 0;
     padding: .5em;
     text-align: center;
     line-height: 10px;
-    background: #eeeeee;
-    font-size: 1.1em;
+    font-size: 110%;
     font-weight: bold;
-    color: #3E64A2;
+    color: #527bbd;
     clear: both;
 	}
-.paper{
-    background: #eeeeee;
-    text-align: left;
-    padding: .5em;
-    margin-bottom: .6em;
-	   }
+
 h1, h2, h3 {
 	color: #527bbd;
 	margin-top: 0.7em;
