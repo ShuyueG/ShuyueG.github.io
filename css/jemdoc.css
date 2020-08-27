@@ -148,8 +148,9 @@ strong {
     line-height: 10px;
     font-size: 115%;
     font-weight: bold;
-    color: #527bbd;
+    color: black;
     clear: both;
+    text-decoration: underline;
 	}
 
 papertitle{

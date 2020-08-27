@@ -140,7 +140,7 @@
 
 <button class="collapsible"></button>
 <div class="content">
-  <p> In machine learning, the performance of a classifier depends on both the classifier model and the dataset. For a specific neural network classifier, the training process varies with the training set used; some training data make training accuracy fast converged to high values, while some data may lead to slowly converged to lower accuracy. To quantify this phenomenon, we created the Distance-based Separability Index (DSI), which is independent of the classifier model, to measure the separability of datasets. In this paper, we consider the situation where different classes of data are mixed together in the same distribution is most difficult for classifiers to separate, and we show that the DSI can indicate whether data belonging to different classes have similar distributions. When comparing our proposed approach with several existing separability/complexity measures using synthetic and real datasets, the results show the DSI is an effective separability measure. We also discussed possible applications of the DSI in the fields of data science, machine learning, and deep learning.</p>
+  <p> In machine learning, the performance of a classifier depends on both the classifier model and the dataset. For a specific neural network classifier, the training process varies with the training set used; some training data make training accuracy fast converged to high values, while some data may lead to slowly converged to lower accuracy. To quantify this phenomenon, <b>we created the Distance-based Separability Index (DSI), which is independent of the classifier model, to measure the separability of datasets</b>. In this paper, we consider the situation where different classes of data are mixed together in the same distribution is most difficult for classifiers to separate, and we show that the DSI can indicate whether data belonging to different classes have similar distributions. When comparing our proposed approach with several existing separability/complexity measures using synthetic and real datasets, the results show the DSI is an effective separability measure. We also discussed possible applications of the DSI in the fields of data science, machine learning, and deep learning.</p>
         
 </div>
                         </td>
@@ -151,21 +151,21 @@
                 <tr>
                         <td width="180" valign="center">
                                 <center>
-                                        <img src="imgs/paper_dsi.png" alt="Link" width="180px" />
+                                        <img src="imgs/paper_GANmeasure.png" alt="Link" width="180px" />
                                 </center>
                         </td>
 
                         <td width="714" valign="top">
 
-<papertitle>Data Separability for Neural Network Classifiers and the Development of a Separability Index</papertitle><br />
+<papertitle>Evaluation of Generative Adversarial Network Performance Based on Direct Analysis of Generated Images</papertitle><br />
         
-        <b>Shuyue Guan</b>, Murray Loew, Hanseok Ko<br />
-        (<em>Preprint</em>), 2020<br />
-                            [<a href="https://arxiv.org/abs/2005.13120">Arxiv</a>]
+        <b>Shuyue Guan</b>, Murray Loew<br />
+        IEEE Applied Imagery Pattern Recognition (AIPR), 2019<br />
+                            [<a href="https://doi.org/10.1109/AIPR47015.2019.9174595">Paper</a>]
 
 <button class="collapsible"></button>
 <div class="content">
-  <p> In machine learning, the performance of a classifier depends on both the classifier model and the dataset. For a specific neural network classifier, the training process varies with the training set used; some training data make training accuracy fast converged to high values, while some data may lead to slowly converged to lower accuracy. To quantify this phenomenon, we created the Distance-based Separability Index (DSI), which is independent of the classifier model, to measure the separability of datasets. In this paper, we consider the situation where different classes of data are mixed together in the same distribution is most difficult for classifiers to separate, and we show that the DSI can indicate whether data belonging to different classes have similar distributions. When comparing our proposed approach with several existing separability/complexity measures using synthetic and real datasets, the results show the DSI is an effective separability measure. We also discussed possible applications of the DSI in the fields of data science, machine learning, and deep learning.</p>
+  <p>Recently, a number of papers have addressed the theory and applications of the Generative Adversarial Network (GAN) in various fields of image processing. Fewer studies, however, have directly evaluated GAN outputs. Those that have been conducted focused on using classification performance and statistical metrics. In this paper, we consider a fundamental way to evaluate GANs by directly analyzing the images they generate, instead of using them as inputs to other classifiers. <b>We consider an ideal GAN according to three aspects</b>: 1) Creativity: non-duplication of the real images. 2) Inheritance: generated images should have the same style, which retains key features of the real images. 3) Diversity: generated images are different from each other. <b>Based on the three aspects, we have designed the Creativity-Inheritance-Diversity (CID) index to evaluate GAN performance</b>. We compared our proposed measures with three commonly used GAN evaluation methods: Inception Score (IS), Fréchet Inception Distance (FID) and 1-Nearest Neighbor classifier (1NNC). In addition, we discuss how the evaluation could help us deepen our understanding of GANs and improve their performance.</p>
         
 </div>
                         </td>
@@ -175,20 +175,141 @@
           
     </table>
 
+<div class="areatitle">Deep Learning Applications on Medical Images</div>
+    
+          <table width="961" border="0" cellpadding="2" cellspacing="10">
+                <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                        <img src="imgs/paper_dcunet.PNG" alt="Link" width="180px" />
+                                </center>
+                        </td>
 
-    
-<button class="collapsible">
-    <a href="https://arxiv.org/abs/2005.13120">Breast cancer detection using synthetic mammograms from generative adversarial networks in convolutional neural networks</a><br />
-        <strong>Shuyue Guan</strong>, Murray Loew<br />
-Journal of Medical Imaging (<strong>JMI</strong>), 2019<br />
-    
- </button>
-    
+                        <td width="714" valign="top">
+
+<papertitle>DC-UNet: Rethinking the U-Net Architecture with Dual Channel Efficient CNN for Medical Images Segmentation</papertitle><br />
+        
+        Ange Lou, <b>Shuyue Guan</b>, Murray Loew<br />
+        (<em>Preprint</em>), 2020<br />
+                            [<a href="https://arxiv.org/abs/2006.00414">Arxiv</a>]
+
+<button class="collapsible"></button>
 <div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p> Recently, deep learning has become much more popular in computer vision area. The Convolution Neural Network (CNN) has brought a breakthrough in images segmentation areas, especially, for medical images. In this regard, U-Net is the predominant approach to medical image segmentation task. The U-Net not only performs well in segmenting multimodal medical images generally, but also in some tough cases of them. However, we found that the classical U-Net architecture has limitation in several aspects. Therefore, we applied modifications: 1) designed efficient CNN architecture to replace encoder and decoder, 2) applied residual module to replace skip connection between encoder and decoder to improve based on the-state-of-the-art U-Net model. Following these modifications, we designed a novel architecture by adding Dual-Channel blocks in the U-Net model, called Dual Channel U-Net (DC-UNet), as a potential successor to the U-Net architecture. We created a new effective CNN architecture and build the DC-UNet based on this CNN. We have evaluated our model on three datasets with tough cases and have obtained a relative improvement in performance of 2.90%, 1.49% and 11.42% respectively compared with classical U-Net, especially, DC-UNet has about 30% parameters of the U-Net. In addition, we introduced the Tanimoto similarity and used it for gray-to-gray image comparisons instead of the Jaccard similarity.</p>
+        
 </div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+                                    <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                        <img src="imgs/paper_spie2019.png" alt="Link" width="180px" />
+                                </center>
+                        </td>
 
-        <h2 id="preprints">Preprints</h2>
+                        <td width="714" valign="top">
+
+<papertitle>Using generative adversarial networks and transfer learning for breast cancer detection by convolutional neural networks</papertitle><br />
+        
+        <b>Shuyue Guan</b>, Murray Loew<br />
+        SPIE Medical Imaging, 2019<br />
+                            [<a href="https://doi.org/10.1117/12.2512671">Paper</a>]
+
+<button class="collapsible"></button>
+<div class="content">
+  <p>In the U.S., breast cancer is diagnosed in about 12% of women during their lifetime and it is the second leading reason for women’s death. Since early diagnosis could improve treatment outcomes and longer survival times for breast cancer patients, it is significant to develop breast cancer detection techniques. The Convolutional Neural Network (CNN) can extract features from images automatically and then perform classification. To train the CNN from scratch, however, requires a large number of labeled images, which is infeasible for some kinds of medical image data such as mammographic tumor images. In this paper, we proposed two solutions to the lack of training images. 1)To generate synthetic mammographic images for training by the Generative Adversarial Network (GAN). Adding GAN generated images made to train CNN from scratch successful and adding more GAN images improved CNN’s validation accuracy to at most (best) 98.85%. 2)To apply transfer learning in CNN. We used the pre-trained VGG-16 model to extract features from input mammograms and used these features to train a Neural Network (NN)-classifier. The stable average validation accuracy converged at about 91.48% for classifying abnormal vs. normal cases in the DDSM database. Then, we combined the two deep-learning based technologies together. That is to apply GAN for image augmentation and transfer learning in CNN for breast cancer detection. To the training set including real and GAN augmented images, although transfer learning model did not perform better than the CNN, the speed of training transfer learning model was about 10 times faster than CNN training. Adding GAN images can help training avoid over-fitting and image augmentation by GAN is necessary to train CNN classifiers from scratch. On the other hand, transfer learning is necessary to be applied for training on pure real images. To apply GAN to augment training images for training CNN classifier obtained the best classification performance.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+                          <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                        <img src="imgs/paper_jmi2019.png" alt="Link" width="180px" />
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+
+<papertitle>Breast cancer detection using synthetic mammograms from generative adversarial networks in convolutional neural networks</papertitle><br />
+        
+        <b>Shuyue Guan</b>, Murray Loew<br />
+        Journal of Medical Imaging (JMI), 2019<br />
+                            [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430964/">Paper</a>]
+
+<button class="collapsible"></button>
+<div class="content">
+  <p> The convolutional neural network (CNN) is a promising technique to detect breast cancer based on mammograms. Training the CNN from scratch, however, requires a large amount of labeled data. Such a requirement usually is infeasible for some kinds of medical image data such as mammographic tumor images. Because improvement of the performance of a CNN classifier requires more training data, the creation of new training images, image augmentation, is one solution to this problem. We applied the generative adversarial network (GAN) to generate synthetic mammographic images from the digital database for screening mammography (DDSM). From the DDSM, we cropped two sets of regions of interest (ROIs) from the images: normal and abnormal (cancer/tumor). Those ROIs were used to train the GAN, and the GAN then generated synthetic images. For comparison with the affine transformation augmentation methods, such as rotation, shifting, scaling, etc., we used six groups of ROIs [three simple groups: affine augmented, GAN synthetic, real (original), and three mixture groups of any two of the three simple groups] for each to train a CNN classifier from scratch. And, we used real ROIs that were not used in training to validate classification outcomes. Our results show that, to classify the normal ROIs and abnormal ROIs from DDSM, adding GAN-generated ROIs in the training data can help the classifier prevent overfitting, and on validation accuracy, the GAN performs about 3.6% better than affine transformations for image augmentation. Therefore, GAN could be an ideal augmentation approach. The images augmented by GAN or affine transformation cannot substitute for real images to train CNN classifiers because the absence of real images in the training set will cause over-fitting.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+              
+           <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                        <img src="imgs/paper_aipr2018.png" alt="Link" width="180px" />
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+
+<papertitle>Segmentation of Thermal Breast Images Using Convolutional and Deconvolutional Neural Networks</papertitle><br />
+        
+        <b>Shuyue Guan</b>, Nada Kamona, Murray Loew<br />
+        IEEE Applied Imagery Pattern Recognition (AIPR), 2018<br />
+                            [<a href="https://doi.org/10.1109/AIPR.2018.8707379">Paper</a>]
+
+<button class="collapsible"></button>
+<div class="content">
+  <p>Breast cancer is the second leading cause of death for women in the U.S. Early detection of breast cancer has been shown to be the key to higher survival rates for breast cancer patients. We are investigating infrared thermography as a noninvasive adjunctive to mammography for breast screening. Thermal imaging is safe, radiation-free, pain-free, and non-contact. Segmentation of breast area from the acquired thermal images will help limit the area for tumor search and reduce the time and effort needed for manual hand segmentation. Autoencoder-like convolutional and deconvolutional neural networks (C-DCNN) are promising computational approaches to automatically segment breast areas in thermal images. In this study, we apply the C-DCNN to segment breast areas from our thermal breast images database, which we are collecting in our clinical trials by imaging breast cancer patients with our infrared camera (N2 Imager). For training the C-DCNN, the inputs are 132 gray-value thermal images and the corresponding manually-cropped breast area images (binary masks to designate the breast areas). For testing, we input thermal images to the trained C-DCNN and the output after post-processing are the binary breast-area images. Cross-validation and comparison with the ground-truth images show that the C-DCNN is a promising method to segment breast areas. The results demonstrate the capability of C-DCNN to learn essential features of breast regions and delineate them in thermal images.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+          
+                
+           <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                        <img src="imgs/paper_aipr2017.png" alt="Link" width="180px" />
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+
+<papertitle>Breast Cancer Detection Using Transfer Learning in Convolutional Neural Networks</papertitle><br />
+        
+        <b>Shuyue Guan</b>, Murray Loew<br />
+        IEEE Applied Imagery Pattern Recognition (AIPR), 2017<br />
+                            [<a href="https://doi.org/10.1109/AIPR.2017.8457948">Paper</a>]
+
+<button class="collapsible"></button>
+<div class="content">
+  <p>In the U.S., breast cancer is diagnosed in about 12 % of women during their lifetime and it is the second leading reason for women's death. Since early diagnosis could improve treatment outcomes and longer survival times for breast cancer patients, it is significant to develop breast cancer detection techniques. The Convolutional Neural Network (CNN) can extract features from images automatically and then perform classification. To train the CNN from scratch, however, requires a large number of labeled images, which is infeasible for some kinds of medical image data such as mammographic tumor images. A promising solution is to apply transfer learning in CNN. In this paper, we firstly tested three training methods on the MIAS database: 1) trained a CNN from scratch, 2) applied the pre-trained VGG-16 model to extract features from input mammograms and used these features to train a Neural Network (NN)-classifier, 3) updated the weights in several final layers of the pre-trained VGG-16 model by back-propagation (fine-tuning) to detect abnormal regions. We found that method 2) is ideal for study because the classification accuracy of fine-tuning model was just 0.008 higher than that of feature extraction model but time cost of feature extraction model was only about 5% of that of the fine-tuning model. Then, we used method 2) to classify regions: benign vs. normal, malignant vs. normal and abnormal vs. normal from the DDSM database with 10-fold cross validation. The average validation accuracy converged at about 0.905 for abnormal vs. normal cases, and there was no obvious overfitting. This study shows that applying transfer learning in CNN can detect breast cancer from mammograms, and training a NN-classifier by feature extraction is a faster method in transfer learning.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+          
+    </table>
+
+<div class="areatitle">Hyperspectral Images-based Cardiac Ablation Lesion Detection</div>
+    
+<div class="areatitle">Non-destructive Testing for Wooden Materials</div>
+    
+
+        <h2 id="preprints">Past Researches</h2>
 
 
         <table border="0" cellspacing="4" cellpadding="2">
