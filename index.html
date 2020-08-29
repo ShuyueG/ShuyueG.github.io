@@ -8,6 +8,9 @@
         <meta name="keywords" content="Shuyue Guan, Guan Shuyue, BME, Machine Learning, Computer Vision, The George Washington University" />
         <meta name="description" content="Shuyue Guan's home page" />
         <link rel="stylesheet" href="./css/jemdoc.css" type="text/css" />
+    <link rel="stylesheet" href="./css/full_img.css" type="text/css" />
+    <link rel="stylesheet" href="./css/zoom_img.css" type="text/css" />
+    <link rel="stylesheet" href="./css/abstract.css" type="text/css" />
 
         <title>Shuyue Guan</title>
         <script type="text/javascript">
@@ -21,6 +24,8 @@
         ga('send', 'pageview');
         //]]>
         </script>
+    
+
 </head>
 <body>
         <div id="layout-content" style="margin-top:25px">
@@ -381,56 +386,8 @@
                 <div id="footer-text">
                 </div>
         </div>
-	
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
     
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-
-var showModal = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-for (var i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', showModal);
-}
-
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-modal.onclick = function() { 
-  modal.style.display = "none";
-}
-
-</script>
+	    <script src="js/abstract.js"></script>
+        <script src="js/full_img.js"></script>
 </body>
 </html>

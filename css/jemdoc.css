@@ -1,104 +1,5 @@
 /* Default css file for jemdoc. */
 
-
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 1;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
-/* [1] The container */
-.img-hover-zoom {
-  transform-origin: 0 0;
-  width:180px; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
 table#tlayout {
     border: none;
     border-collapse: separate;
@@ -236,9 +137,6 @@ em {
 	font-style: italic;
 }
 
-strong {
-	font-weight: bold;
-}
 
 .areatitle {
     margin: 0 0 .1em 0;
@@ -281,8 +179,6 @@ h2 {
 	padding-top: 0.8em;
 	font-size: 125%;
 }
-
-
 
 
 h2 + h3 {
@@ -502,48 +398,3 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
-
-button {
-    font-family: Georgia, serif;
-    font-size: 100%;  
-    
-}
-    
-.collapsible {
-  background-color: white;
-  cursor: pointer;
-  padding: 0px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  margin-left: auto;
-
-}
-
-.active, .collapsible:hover {
-    background-color: #E5E5E5;
-}
-
-.collapsible:after {
-  content: 'Abstract +';
-  color: blue;
-  font-weight:normal;
-  float: right;
-
-}
-
-.active:after {
-content: "Abstract −";
-}
-
-.content {
-    padding-right: 18px;
-    padding-left: 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #E5E5E5;
-    text-align: justify;
-}
-
