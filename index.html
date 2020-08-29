@@ -126,7 +126,19 @@
                 <tr>
                         <td width="180" valign="center">
                                 <center>
-                                        <img src="imgs/paper_dsi.png" alt="Link" width="180px" />
+                                    
+                                    <!-- Zoom in -->
+                                    <div class="img-hover-zoom">
+                                        <img class="myImg" src="imgs/paper_dsi.png" alt="ICD and BCD set distributions for 'Spirals' and 'Blobs'" width="180px" />
+                                        </div>      
+                                                                        
+                                    <!-- The full-size Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+
                                 </center>
                         </td>
 
@@ -151,7 +163,19 @@
                 <tr>
                         <td width="180" valign="center">
                                 <center>
-                                        <img src="imgs/paper_GANmeasure.png" alt="Link" width="180px" />
+
+                                    <!-- Zoom in -->
+                                    <div class="img-hover-zoom">
+                                        <img class="myImg" src="imgs/paper_GANmeasure.png" alt="ICD and BCD set distributions for 'Spirals' and 'Blobs'" width="180px" />
+                                        </div>
+                                    
+                                    <!-- The full-size Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+
                                 </center>
                         </td>
 
@@ -376,5 +400,37 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+    
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+for (var i = 0; i < img.length; i++) {
+    img[i].addEventListener('click', showModal);
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
 </body>
 </html>
