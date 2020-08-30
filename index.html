@@ -158,7 +158,7 @@
         (<em>Preprint</em>), 2020<br />
                             [<a href="https://arxiv.org/abs/2005.13120">Arxiv</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p> In machine learning, the performance of a classifier depends on both the classifier model and the dataset. For a specific neural network classifier, the training process varies with the training set used; some training data make training accuracy fast converged to high values, while some data may lead to slowly converged to lower accuracy. To quantify this phenomenon, <b>we created the Distance-based Separability Index (DSI), which is independent of the classifier model, to measure the separability of datasets</b>. In this paper, we consider the situation where different classes of data are mixed together in the same distribution is most difficult for classifiers to separate, and we show that the DSI can indicate whether data belonging to different classes have similar distributions. When comparing our proposed approach with several existing separability/complexity measures using synthetic and real datasets, the results show the DSI is an effective separability measure. We also discussed possible applications of the DSI in the fields of data science, machine learning, and deep learning.</p>
         
@@ -195,7 +195,7 @@
         IEEE Applied Imagery Pattern Recognition (AIPR), 2019<br />
                             [<a href="https://doi.org/10.1109/AIPR47015.2019.9174595">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>Recently, a number of papers have addressed the theory and applications of the Generative Adversarial Network (GAN) in various fields of image processing. Fewer studies, however, have directly evaluated GAN outputs. Those that have been conducted focused on using classification performance and statistical metrics. In this paper, we consider a fundamental way to evaluate GANs by directly analyzing the images they generate, instead of using them as inputs to other classifiers. <b>We consider an ideal GAN according to three aspects</b>: 1) Creativity: non-duplication of the real images. 2) Inheritance: generated images should have the same style, which retains key features of the real images. 3) Diversity: generated images are different from each other. <b>Based on the three aspects, we have designed the Creativity-Inheritance-Diversity (CID) index to evaluate GAN performance</b>. We compared our proposed measures with three commonly used GAN evaluation methods: Inception Score (IS), Fréchet Inception Distance (FID) and 1-Nearest Neighbor classifier (1NNC). In addition, we discuss how the evaluation could help us deepen our understanding of GANs and improve their performance.</p>
         
@@ -238,7 +238,7 @@
         (<em>Preprint</em>), 2020<br />
                             [<a href="https://arxiv.org/abs/2006.00414">Arxiv</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p> Recently, deep learning has become much more popular in computer vision area. The Convolution Neural Network (CNN) has brought a breakthrough in images segmentation areas, especially, for medical images. In this regard, U-Net is the predominant approach to medical image segmentation task. The U-Net not only performs well in segmenting multimodal medical images generally, but also in some tough cases of them. However, we found that the classical U-Net architecture has limitation in several aspects. Therefore, we applied modifications: 1) designed efficient CNN architecture to replace encoder and decoder, 2) applied residual module to replace skip connection between encoder and decoder to improve based on the-state-of-the-art U-Net model. Following these modifications, we designed a novel architecture by adding Dual-Channel blocks in the U-Net model, called Dual Channel U-Net (DC-UNet), as a potential successor to the U-Net architecture. We created a new effective CNN architecture and build the DC-UNet based on this CNN. We have evaluated our model on three datasets with tough cases and have obtained a relative improvement in performance of 2.90%, 1.49% and 11.42% respectively compared with classical U-Net, especially, DC-UNet has about 30% parameters of the U-Net. In addition, we introduced the Tanimoto similarity and used it for gray-to-gray image comparisons instead of the Jaccard similarity.</p>
         
@@ -274,7 +274,7 @@
         SPIE Medical Imaging, 2019<br />
                             [<a href="https://doi.org/10.1117/12.2512671">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>In the U.S., breast cancer is diagnosed in about 12% of women during their lifetime and it is the second leading reason for women’s death. Since early diagnosis could improve treatment outcomes and longer survival times for breast cancer patients, it is significant to develop breast cancer detection techniques. The Convolutional Neural Network (CNN) can extract features from images automatically and then perform classification. To train the CNN from scratch, however, requires a large number of labeled images, which is infeasible for some kinds of medical image data such as mammographic tumor images. In this paper, we proposed two solutions to the lack of training images. 1)To generate synthetic mammographic images for training by the Generative Adversarial Network (GAN). Adding GAN generated images made to train CNN from scratch successful and adding more GAN images improved CNN’s validation accuracy to at most (best) 98.85%. 2)To apply transfer learning in CNN. We used the pre-trained VGG-16 model to extract features from input mammograms and used these features to train a Neural Network (NN)-classifier. The stable average validation accuracy converged at about 91.48% for classifying abnormal vs. normal cases in the DDSM database. Then, we combined the two deep-learning based technologies together. That is to apply GAN for image augmentation and transfer learning in CNN for breast cancer detection. To the training set including real and GAN augmented images, although transfer learning model did not perform better than the CNN, the speed of training transfer learning model was about 10 times faster than CNN training. Adding GAN images can help training avoid over-fitting and image augmentation by GAN is necessary to train CNN classifiers from scratch. On the other hand, transfer learning is necessary to be applied for training on pure real images. To apply GAN to augment training images for training CNN classifier obtained the best classification performance.</p>
         
@@ -309,7 +309,7 @@
         Journal of Medical Imaging (JMI), 2019<br />
                             [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6430964/">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p> The convolutional neural network (CNN) is a promising technique to detect breast cancer based on mammograms. Training the CNN from scratch, however, requires a large amount of labeled data. Such a requirement usually is infeasible for some kinds of medical image data such as mammographic tumor images. Because improvement of the performance of a CNN classifier requires more training data, the creation of new training images, image augmentation, is one solution to this problem. We applied the generative adversarial network (GAN) to generate synthetic mammographic images from the digital database for screening mammography (DDSM). From the DDSM, we cropped two sets of regions of interest (ROIs) from the images: normal and abnormal (cancer/tumor). Those ROIs were used to train the GAN, and the GAN then generated synthetic images. For comparison with the affine transformation augmentation methods, such as rotation, shifting, scaling, etc., we used six groups of ROIs [three simple groups: affine augmented, GAN synthetic, real (original), and three mixture groups of any two of the three simple groups] for each to train a CNN classifier from scratch. And, we used real ROIs that were not used in training to validate classification outcomes. Our results show that, to classify the normal ROIs and abnormal ROIs from DDSM, adding GAN-generated ROIs in the training data can help the classifier prevent overfitting, and on validation accuracy, the GAN performs about 3.6% better than affine transformations for image augmentation. Therefore, GAN could be an ideal augmentation approach. The images augmented by GAN or affine transformation cannot substitute for real images to train CNN classifiers because the absence of real images in the training set will cause over-fitting.</p>
         
@@ -345,7 +345,7 @@
         IEEE Applied Imagery Pattern Recognition (AIPR), 2018<br />
                             [<a href="https://doi.org/10.1109/AIPR.2018.8707379">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>Breast cancer is the second leading cause of death for women in the U.S. Early detection of breast cancer has been shown to be the key to higher survival rates for breast cancer patients. We are investigating infrared thermography as a noninvasive adjunctive to mammography for breast screening. Thermal imaging is safe, radiation-free, pain-free, and non-contact. Segmentation of breast area from the acquired thermal images will help limit the area for tumor search and reduce the time and effort needed for manual hand segmentation. Autoencoder-like convolutional and deconvolutional neural networks (C-DCNN) are promising computational approaches to automatically segment breast areas in thermal images. In this study, we apply the C-DCNN to segment breast areas from our thermal breast images database, which we are collecting in our clinical trials by imaging breast cancer patients with our infrared camera (N2 Imager). For training the C-DCNN, the inputs are 132 gray-value thermal images and the corresponding manually-cropped breast area images (binary masks to designate the breast areas). For testing, we input thermal images to the trained C-DCNN and the output after post-processing are the binary breast-area images. Cross-validation and comparison with the ground-truth images show that the C-DCNN is a promising method to segment breast areas. The results demonstrate the capability of C-DCNN to learn essential features of breast regions and delineate them in thermal images.</p>
         
@@ -382,7 +382,7 @@
         IEEE Applied Imagery Pattern Recognition (AIPR), 2017<br />
                             [<a href="https://doi.org/10.1109/AIPR.2017.8457948">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>In the U.S., breast cancer is diagnosed in about 12 % of women during their lifetime and it is the second leading reason for women's death. Since early diagnosis could improve treatment outcomes and longer survival times for breast cancer patients, it is significant to develop breast cancer detection techniques. The Convolutional Neural Network (CNN) can extract features from images automatically and then perform classification. To train the CNN from scratch, however, requires a large number of labeled images, which is infeasible for some kinds of medical image data such as mammographic tumor images. A promising solution is to apply transfer learning in CNN. In this paper, we firstly tested three training methods on the MIAS database: 1) trained a CNN from scratch, 2) applied the pre-trained VGG-16 model to extract features from input mammograms and used these features to train a Neural Network (NN)-classifier, 3) updated the weights in several final layers of the pre-trained VGG-16 model by back-propagation (fine-tuning) to detect abnormal regions. We found that method 2) is ideal for study because the classification accuracy of fine-tuning model was just 0.008 higher than that of feature extraction model but time cost of feature extraction model was only about 5% of that of the fine-tuning model. Then, we used method 2) to classify regions: benign vs. normal, malignant vs. normal and abnormal vs. normal from the DDSM database with 10-fold cross validation. The average validation accuracy converged at about 0.905 for abnormal vs. normal cases, and there was no obvious overfitting. This study shows that applying transfer learning in CNN can detect breast cancer from mammograms, and training a NN-classifier by feature extraction is a faster method in transfer learning.</p>
         
@@ -429,7 +429,7 @@
         Journal of Medical Imaging (JMI), 2018<br />
                             [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6294845/">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p> Atrial fibrillation is the most common cardiac arrhythmia. It is being effectively treated using the radiofrequency
 ablation (RFA) procedure, which destroys culprit tissue and creates scars that prevent the spread of
@@ -477,7 +477,7 @@ improve clinical outcomes for atrial fibrillation patients.</p>
         Biomedical Optics Express, 2018<br />
                             [<a href="https://www.osapublishing.org/boe/abstract.cfm?uri=boe-9-5-2189">Paper</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>In vivo autofluorescence hyperspectral imaging of moving objects can be challenging due to motion artifacts and to the limited amount of acquired photons. To address both limitations, we selectively reduced the number of spectral bands while maintaining accurate target identification. Several downsampling approaches were applied to data obtained from the atrial tissue of adult pigs with sites of radiofrequency ablation lesions. Standard image qualifiers such as the mean square error, the peak signal-to-noise ratio, the structural similarity index map, and an accuracy index of lesion component images were used to quantify the effects of spectral binning, an increased spectral distance between individual bands, as well as random combinations of spectral bands. Results point to several quantitative strategies for deriving combinations of a small number of spectral bands that can successfully detect target tissue. Insights from our studies can be applied to a wide range of applications.</p>
         
@@ -486,6 +486,49 @@ improve clinical outcomes for atrial fibrillation patients.</p>
                 </tr>
           <!-- paper end -->
                          
+          
+    </table>
+    
+    <div class="areatitle">Climate (Frost Point) Data collection and analysis by R</div>
+    
+              <table width="961" border="0" cellpadding="2" cellspacing="10">
+                  
+                  
+                <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                    
+                                    <!-- Zoom in -->
+                                    <div class="img-hover-zoom">
+                                        <img class="myImg" src="imgs/paper_jmi2018.png" alt="Results for porcine atria clustered by k-means" width="180px" />
+                                        </div>
+                                    
+                                    <!-- The full-size Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+    
+                            [<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6294845/">Paper</a>]
+
+<button class="collapsible">Flowchart</button>
+
+<div class="content">
+  <p> <img src="imgs/frost_point.png" alt="Results for porcine atria clustered by k-means" width="180px" class="center" /></p>
+        
+</div>
+                      
+                    </td>
+                </tr>
+          <!-- paper end -->
+                                    
           
     </table>
     
@@ -523,7 +566,7 @@ improve clinical outcomes for atrial fibrillation patients.</p>
         International Journal of Smart Home, 2015<br />
                             [<a href="https://www.earticle.net/Article/A246130">Paper</a>] [<a href="http://dx.doi.org/10.14257/ijsh.2015.9.5.14">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>Firstly, we applied the X-ray non-destructive testing technology to detect wood defects for
 getting the images. After graying the images, we calculated their GLCMS(Gray Level Cooccurrence Matrixes), then we normalized GLCMS to obtain the joint probabilities of GLCMS. The feature vectors of images, which included 13 eigenvalues of images were
@@ -571,7 +614,7 @@ tested blockboards" width="180px" />
         Advances in Information Sciences and Service Sciences (AISS), 2013<br />
                             [<a href="/doc/AISS2013.pdf">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>A Shannon entropy-based image processing approach is introduced and applied to the blockboard
 X-ray images obtained from nondestructive scanning. X-ray nondestructive testing technology has been
@@ -616,7 +659,7 @@ detecting and analyzing defect edges in blockboard X-ray images is provided.</p>
         International Journal of Advancements in Computing Technology (IJACT), 2012<br />
                             [<a href="/doc/IJACT2012pdf.pdf">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>The blockboard defects were detected by Hough transform and Minimum-Perimeter Polygons. Xray
 nondestructive testing system was used to obtain X-ray blockboard images. The rough binary
@@ -660,7 +703,7 @@ the method in this paper is much more convenient and faster than the traditional
         Advances in Information Sciences and Service Sciences (AISS), 2012<br />
                             [<a href="/doc/AISS2012.pdf">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>Nowadays, nondestructive testing technology is a new subject that has gotten rapid development. Xray
 nondestructive scanning technology has been applied to the detection of internal defects in
@@ -707,7 +750,7 @@ in defect detection of blockboard X-ray images was provided.</p>
         Advanced Materials Research (AMR), 2012<br />
                             [<a href="https://www.scientific.net/AMR.428.57">Paper</a>] [<a href="doc/AMR2012.pdf">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>CT technology was used in nondestructive testing procedure of Wood-plastic composite in
 the paper as well as computes the CT number range of different Wood-plastic composite tomography
@@ -748,7 +791,7 @@ Wood-plastic composite density was provided.</p>
         Information and Business Intelligence (IBI), 2011<br />
                             [<a href="https://doi.org/10.1007/978-3-642-29084-8_95">Paper</a>] [<a href="doc/IBI2011.pdf">PDF</a>]
 
-<button class="collapsible"></button>
+<button class="collapsible">Abstract</button>
 <div class="content">
   <p>Fiberboard has long been a significant practical material. Computed
 tomography (CT) shows great potential for nondestructive testing of the

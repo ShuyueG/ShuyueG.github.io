@@ -1,8 +1,9 @@
 
 button {
     font-family: Georgia, serif;
-    font-size: 100%;  
-    
+    font-size: 100%;
+    color: blue;
+
 }
     
 .collapsible {
@@ -11,7 +12,7 @@ button {
   padding: 0px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: right;
   outline: none;
   margin-left: auto;
 
@@ -22,15 +23,16 @@ button {
 }
 
 .collapsible:after {
-  content: 'Abstract +';
+  content: '\002B';
   color: blue;
-  font-weight:normal;
+  font-weight: bold;
   float: right;
+  margin-left: 5px;
 
 }
 
 .active:after {
-content: "Abstract −";
+content: "\2212";
 }
 
 .content {

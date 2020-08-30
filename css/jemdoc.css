@@ -398,3 +398,9 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
