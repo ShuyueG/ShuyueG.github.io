@@ -45,14 +45,8 @@
           </table>
                                           
 
-                                          <p style="text-align:justify;">I received my Ph.D. from the George Washington University, advised by <a href="https://www.seas.gwu.edu/murray-h-loew" target="_blank">Murray H. Loew</a>. </p>
-                                              
-                                          
-                                          <p style="text-align:justify;">My primary research interests lie in image processing, machine learning, deep learning, and their applications in medical imaging. I am recently focused on the data separability measure, learnability for deep learning models (transparent deep learning), and machine learning applications to solve problems in image analysis, especially for medical imaging. My previous studies were about the non-destructive testing of wood composite panel internal defect in the Biophysics program at Northeast Forestry University, China.</p>
-
-
-
-                                        </td>
+                                         <p style="text-align:justify;">Visiting Scientist, <a href="https://www.fda.gov/about-fda/cdrh-offices/division-imaging-diagnostics-and-software-reliability">DIDSR</a>/OSEL/CDRH/FDA</p>
+                                        <p style="text-align:justify;">Ph.D. received from the George Washington University (GWU), advised by <a href="https://www.seas.gwu.edu/murray-h-loew" target="_blank">Murray H. Loew</a>. Primary research interests: image processing, machine learning, deep learning, and their applications in medical imaging. Recent researches: in silico medical AI, image segmentation synthesis, data separability measure, and learnability for deep learning models (transparent deep learning). Previous studies: deep learning applications on medical images (BME program at GWU), hyperspectral images-based cardiac ablation lesion detection (BME program at GWU), and non-destructive testing of wood composite panel internal defect (Biophysics program at Northeast Forestry University, China).</p></td>
 
                                         <td width="60">
                                         </td>
@@ -69,7 +63,7 @@
                 
             <a href="doc/Academic_CV_PUB_EN.pdf">Curriculum Vitae</a><br />
             
-                <br />Email: frankshuyueguan AT gwu DOT edu
+                <br />Email: frank.shuyue.guan AT gmail DOT com
                 <table width="100%" cellspacing="0">
                   <tbody>
                     <tr>
@@ -391,10 +385,10 @@ decision boundaries" width="180px" />
 
                         <td width="714" valign="top">
 
-<papertitle>The estimation of training accuracy for two-layer neural networks on random datasets without training</papertitle><br />
+<papertitle>The training accuracy of two-layer neural networks: Its estimation and understanding using random data</papertitle><br />
         
         <b>Shuyue Guan</b>, Murray Loew<br />
-        (Under review in <em>Neural Processing Letters</em>), 2020<br />
+        <!--(Under review in <em>Neural Processing Letters</em>), 2020<br />-->
                             [<a href="https://arxiv.org/abs/2010.13380" target="_blank">Arxiv</a>]
 
 <button class="collapsible">Abstract</button>
@@ -487,6 +481,44 @@ decision boundaries" width="180px" />
                         </td>
                 </tr>
           <!-- paper end -->
+			  
+			                
+                              <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                    
+                                    <!-- Zoom in -->
+                                    <div class="img-hover-zoom">
+                                        <img class="myImg" src="imgs/paper_CFPNetM.png" alt="The CFP module" width="180px" />
+                                        </div>
+                                    
+                                    <!-- The full-size Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+
+<papertitle>CFPNet-M: A Light-Weight Encoder-Decoder Based Network for Multimodal Biomedical Image Real-Time Segmentation</papertitle><br />
+        
+        Ange Lou, <b>Shuyue Guan</b>, Murray Loew<br />
+        (Under review in <em>Computers in Biology and Medicine</em>), 2022<br />
+                           [<a href="https://arxiv.org/abs/2105.04075" target="_blank">Arxiv</a>] [<a href="https://github.com/ShuyueG/CFPNet-Medicine" target="_blank">Code</a>]
+
+<button class="collapsible">Abstract</button>
+<div class="content">
+  <p>Real-time applications for biomedical images, such as image-guided surgery and medical robotics, have rarely included segmentation. Although many deep learning techniques have achieved high segmentation performance, it is still difficult to apply them in real-time due to their great complexities and low inference speeds. In this study, we propose a novel light-weight architecture, named Channel-wise Feature Pyramid Network for Medicine (CFPNet-M), for segmentation model that can operate in real-time: 1) we applied dilated convolution to design an effective CNN module, and 2) we simplified the architecture of network. To evaluate our method, we selected five datasets from different imaging modalities: thermography, electron microscopy, endoscopy, dermoscopy, and digital retinal images. We compared its performance with several models having a variety of complexities. To permit comparison of gray-level images, we used the Tanimoto similarity instead of the Jaccard index. The CFPNet-M achieves segmentation results on all five medical datasets that are comparable to existing methods, yet require only 8.8 MB memory, and just 0.65 million parameters, which is about 2% of those of the U-Net we used in experiments. Unlike other deep-learning segmentation methods, this new approach is suitable for real-time medical application: its inference speed can reach 80 frames per second when implemented on a single RTX 2070Ti GPU with an input image size of 256×192 pixels.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
 
                 <!-- paper strat -->
                 <tr>
@@ -527,43 +559,7 @@ health, helping clinicians diagnose retinal diseases with confusing features mor
                 </tr>
           <!-- paper end -->
 
-              
-                              <!-- paper strat -->
-                <tr>
-                        <td width="180" valign="center">
-                                <center>
-                                    
-                                    <!-- Zoom in -->
-                                    <div class="img-hover-zoom">
-                                        <img class="myImg" src="imgs/paper_CFPNetM.png" alt="The CFP module" width="180px" />
-                                        </div>
-                                    
-                                    <!-- The full-size Modal -->
-                                    <div id="myModal" class="modal">
-                                      <span class="close">&times;</span>
-                                      <img class="modal-content" id="img01">
-                                      <div id="caption"></div>
-                                    </div>
 
-                                </center>
-                        </td>
-
-                        <td width="714" valign="top">
-
-<papertitle>CFPNet-M: A Light-Weight Encoder-Decoder Based Network for Multimodal Biomedical Image Real-Time Segmentation</papertitle><br />
-        
-        Ange Lou, <b>Shuyue Guan</b>, Murray Loew<br />
-        (Under review in <em>Medical Image Analysis</em>), 2021<br />
-                           [<a href="https://arxiv.org/abs/2105.04075" target="_blank">Arxiv</a>] [<a href="https://github.com/ShuyueG/CFPNet-Medicine" target="_blank">Code</a>]
-
-<button class="collapsible">Abstract</button>
-<div class="content">
-  <p>Real-time applications for biomedical images, such as image-guided surgery and medical robotics, have rarely included segmentation. Although many deep learning techniques have achieved high segmentation performance, it is still difficult to apply them in real-time due to their great complexities and low inference speeds. In this study, we propose a novel light-weight architecture, named Channel-wise Feature Pyramid Network for Medicine (CFPNet-M), for segmentation model that can operate in real-time: 1) we applied dilated convolution to design an effective CNN module, and 2) we simplified the architecture of network. To evaluate our method, we selected five datasets from different imaging modalities: thermography, electron microscopy, endoscopy, dermoscopy, and digital retinal images. We compared its performance with several models having a variety of complexities. To permit comparison of gray-level images, we used the Tanimoto similarity instead of the Jaccard index. The CFPNet-M achieves segmentation results on all five medical datasets that are comparable to existing methods, yet require only 8.8 MB memory, and just 0.65 million parameters, which is about 2% of those of the U-Net we used in experiments. Unlike other deep-learning segmentation methods, this new approach is suitable for real-time medical application: its inference speed can reach 80 frames per second when implemented on a single RTX 2070Ti GPU with an input image size of 256×192 pixels.</p>
-        
-</div>
-                        </td>
-                </tr>
-          <!-- paper end -->
 
               
                 <!-- paper strat -->
@@ -1235,6 +1231,7 @@ density is provided.</p>
     
 <h4>Conferences</h4>
         <ul>
+			<li><a href="https://www.aipr-workshop.org/past-conference-information" target="_blank">51th IEEE Applied Imagery Pattern Recognition (AIPR)</a>, &quot;Informing selection of performance metrics for medical image segmentation evaluation using synthetic segmentations&quot;, Washington DC. (October 2022)</li>
             <li><a href="https://www.aipr-workshop.org/past-conference-information" target="_blank">50th IEEE Applied Imagery Pattern Recognition (AIPR)</a>, &quot;A Sneak Attack on Segmentation of Medical Images Using Deep Neural Network Classifiers&quot;,  Online. (October 2021)</li>
             <li><a href="https://www.icmla-conference.org/icmla20/" target="_blank">19th IEEE International Conference on Machine Learning and Applications (ICMLA)</a>, &quot;Analysis of Generalizability of Deep Neural Networks Based on the Complexity of Decision Boundary&quot;, Online. (December 2020)</li>
             <li><a href="https://ictai2020.org/" target="_blank">32th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)</a>, &quot;An Internal Cluster Validity Index Using a Distance-based Separability Measure&quot;, Online. (November 2020)</li>
@@ -1275,19 +1272,22 @@ density is provided.</p>
       <li>  Journal Reviewer: <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE&nbsp;TPAMI</a>,
                               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank">IEEE&nbsp;TNNLS</a>,
                               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4235" target="_blank">IEEE&nbsp;TEVC</a>,
-                              <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target="_blank">IEEE&nbsp;T-MI</a>,
+                              <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42" target="_blank">IEEE&nbsp;TMI</a>,
                               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6687317" target="_blank">IEEE&nbsp;TBD</a>,
                               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank">IEEE&nbsp;IoT</a>,
                               <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639" target="_blank">IEEE&nbsp;Access</a>,
+		  					  <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" target="_blank">SPIE&nbsp;JMI</a>,
+		  					  <a href="https://dl.acm.org/journal/tkdd" target="_blank">ACM&nbsp;TKDD</a>,
                               <a href="https://ees.elsevier.com/pr/" target="_blank">PR</a>,
-                              <a href="https://dl.acm.org/journal/tkdd" target="_blank">ACM&nbsp;TKDD</a>,
-                              <a href="https://onlinelibrary.wiley.com/journal/14678640" target="_blank">Computational&nbsp;Intelligence</a>,
-                              <a href="https://www.springer.com/journal/12652/" target="_blank">JAIHC</a>,
-                              <a href="https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging" target="_blank">SPIE&nbsp;JMI</a>,
-                              <a href="https://www.journals.elsevier.com/international-journal-of-medical-informatics" target="_blank">IJMI</a>,
-                              <a href="https://www.journals.elsevier.com/expert-systems-with-applications" target="_blank">ESWA</a>,
-                              <a href="https://www.hindawi.com/journals/cin/" target="_blank">CIN</a>,
+                              <a href="https://www.journals.elsevier.com/international-journal-of-medical-informatics" target="_blank">IJMI</a>,                   <a href="https://www.journals.elsevier.com/expert-systems-with-applications" target="_blank">ESWA</a>,
+		  					  <a href="https://www.sciencedirect.com/journal/chaos-solitons-and-fractals" target="_blank">CSF</a>,
+		  					  <a href="https://www.springer.com/journal/12652/" target="_blank">JAIHC</a>,
+		  					  <a href="https://www.hindawi.com/journals/cin/" target="_blank">CIN</a>,
 		  					  <a href="https://www.hindawi.com/journals/mpe/" target="_blank">MPE</a>
+                              <a href="https://onlinelibrary.wiley.com/journal/14678640" target="_blank">Computational&nbsp;Intelligence</a>,
+                              <a href="https://www.worldscientific.com/worldscinet/bme" target="_blank">BME</a>
+                              
+		  					  
         </li>
         <li>
             Conference Reviewer: <a href="http://aistats.org/aistats2021/" target="_blank">AISTATS&nbsp;2021</a>,
