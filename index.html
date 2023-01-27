@@ -487,6 +487,45 @@ decision boundaries" width="180px" />
 <div class="areatitle">Deep Learning Applications on Medical Images</div>
     
           <table width="961" border="0" cellpadding="2" cellspacing="10">
+			  
+			                
+                              <!-- paper strat -->
+                <tr>
+                        <td width="180" valign="center">
+                                <center>
+                                    
+                                    <!-- Zoom in -->
+                                    <div class="img-hover-zoom">
+                                        <img class="myImg" src="imgs/paper_CFPNetM.png" alt="The CFP module" width="180px" />
+                                        </div>
+                                    
+                                    <!-- The full-size Modal -->
+                                    <div id="myModal" class="modal">
+                                      <span class="close">&times;</span>
+                                      <img class="modal-content" id="img01">
+                                      <div id="caption"></div>
+                                    </div>
+
+                                </center>
+                        </td>
+
+                        <td width="714" valign="top">
+
+<papertitle>CFPNet-M: A Light-Weight Encoder-Decoder Based Network for Multimodal Biomedical Image Real-Time Segmentation</papertitle><br />
+        
+        Ange Lou, <b>Shuyue Guan</b>, Murray Loew<br />
+        Computers in Biology and Medicine, 2023<br />
+                           [<a href="https://doi.org/10.1016/j.compbiomed.2023.106579" target="_blank">Paper</a>] [<a href="https://arxiv.org/abs/2105.04075" target="_blank">Arxiv</a>] [<a href="https://github.com/ShuyueG/CFPNet-Medicine" target="_blank">Code</a>]
+
+<button class="collapsible">Abstract</button>
+<div class="content">
+  <p>Deep learning techniques are proving instrumental in identifying, classifying, and quantifying patterns in medical images. Segmentation is one of the important applications in medical image analysis. The U-Net has become the predominant deep-learning approach to medical image segmentation tasks. Existing U-Net based models have limitations in several respects, however, including: the requirement for millions of parameters in the U-Net, which consumes considerable computational resources and memory; the lack of global information; and incomplete segmentation in difficult cases. To remove some of those limitations, we built on our previous work and applied two modifications to improve the U-Net model: 1) we designed and added the dilated channel-wise CNN module and 2) we simplified the U-shape network. We then proposed a novel light-weight architecture, the Channel-wise Feature Pyramid Network for Medicine (CFPNet-M). To evaluate our method, we selected five datasets from different imaging modalities: thermography, electron microscopy, endoscopy, dermoscopy, and digital retinal images. We compared its performance with several models having a variety of complexities. We used the Tanimoto similarity instead of the Jaccard index for gray-level image comparisons. The CFPNet-M achieves segmentation results on all five medical datasets that are comparable to existing methods, yet require only 8.8 MB memory, and just 0.65 million parameters, which is about 2% of U-Net. Unlike other deep-learning segmentation methods, this new approach is suitable for real-time application: its inference speed can reach 80 frames per second when implemented on a single RTX 2070Ti GPU with an input image size of 256 × 192 pixels.</p>
+        
+</div>
+                        </td>
+                </tr>
+          <!-- paper end -->
+
               
                                            <!-- paper strat -->
                 <tr>
@@ -525,43 +564,6 @@ decision boundaries" width="180px" />
                 </tr>
           <!-- paper end -->
 			  
-			                
-                              <!-- paper strat -->
-                <tr>
-                        <td width="180" valign="center">
-                                <center>
-                                    
-                                    <!-- Zoom in -->
-                                    <div class="img-hover-zoom">
-                                        <img class="myImg" src="imgs/paper_CFPNetM.png" alt="The CFP module" width="180px" />
-                                        </div>
-                                    
-                                    <!-- The full-size Modal -->
-                                    <div id="myModal" class="modal">
-                                      <span class="close">&times;</span>
-                                      <img class="modal-content" id="img01">
-                                      <div id="caption"></div>
-                                    </div>
-
-                                </center>
-                        </td>
-
-                        <td width="714" valign="top">
-
-<papertitle>CFPNet-M: A Light-Weight Encoder-Decoder Based Network for Multimodal Biomedical Image Real-Time Segmentation</papertitle><br />
-        
-        Ange Lou, <b>Shuyue Guan</b>, Murray Loew<br />
-        (Under review in <em>Computers in Biology and Medicine</em>), 2022<br />
-                           [<a href="https://arxiv.org/abs/2105.04075" target="_blank">Arxiv</a>] [<a href="https://github.com/ShuyueG/CFPNet-Medicine" target="_blank">Code</a>]
-
-<button class="collapsible">Abstract</button>
-<div class="content">
-  <p>Real-time applications for biomedical images, such as image-guided surgery and medical robotics, have rarely included segmentation. Although many deep learning techniques have achieved high segmentation performance, it is still difficult to apply them in real-time due to their great complexities and low inference speeds. In this study, we propose a novel light-weight architecture, named Channel-wise Feature Pyramid Network for Medicine (CFPNet-M), for segmentation model that can operate in real-time: 1) we applied dilated convolution to design an effective CNN module, and 2) we simplified the architecture of network. To evaluate our method, we selected five datasets from different imaging modalities: thermography, electron microscopy, endoscopy, dermoscopy, and digital retinal images. We compared its performance with several models having a variety of complexities. To permit comparison of gray-level images, we used the Tanimoto similarity instead of the Jaccard index. The CFPNet-M achieves segmentation results on all five medical datasets that are comparable to existing methods, yet require only 8.8 MB memory, and just 0.65 million parameters, which is about 2% of those of the U-Net we used in experiments. Unlike other deep-learning segmentation methods, this new approach is suitable for real-time medical application: its inference speed can reach 80 frames per second when implemented on a single RTX 2070Ti GPU with an input image size of 256×192 pixels.</p>
-        
-</div>
-                        </td>
-                </tr>
-          <!-- paper end -->
 
                 <!-- paper strat -->
                 <tr>
