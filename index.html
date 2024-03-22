@@ -28,6 +28,43 @@
 
 </head>
 <body>
+	<div class="dropdown" style="float:right;">
+	  <button class="dropbtn" ><a href="#volunteer" style="color: inherit;">Volunteer</a></button>
+	</div>
+	
+	<div class="dropdown" style="float:right;">
+	  <button class="dropbtn" ><a href="#teaching" style="color: inherit;">TA</a></button>
+	</div>
+	
+	<div class="dropdown" style="float:right;">
+	  <button class="dropbtn" ><a href="#talks" style="color: inherit;">Service</a></button>
+	</div>
+
+	<div class="dropdown" style="float:right;">
+	  <button class="dropbtn" >Presentation</button>
+	  <div class="dropdown-content" >
+	    <a href="#ivtalks">Invited Talks</a>
+	    <a href="#conftalks">Conferences</a>
+		<a href="#othertalks">Others</a>
+	  </div>
+	</div>
+	
+	<div class="dropdown" style="float:right;">
+	  <button class="dropbtn">Publication</button>
+	  <div class="dropdown-content" style = "min-width: 260px;">
+		<p style="margin: 0; font-size:14px; background-color: #878787; color: white; text-align: center;">Recent Projects</p>
+	    <a href="#AIML">Medical AI/ML</a>
+	    <a href="#XAI">Transparent Deep Learning</a>
+		<a href="#DLApp">Deep Learning Applications on Medical Images</a>
+		<p style="margin: 0; font-size:14px; background-color: #878787; color: white; text-align: center;">Past Projects</p>
+	    <a href="#Hyperspectral">Hyperspectral Images-based Cardiac Ablation Lesion Detection</a>
+		<a href="#FrostPoint">Climate (Frost Point) Data Collection and Analysis by R</a>
+		<a href="#Wooden">Non-destructive Testing for Wooden Materials</a>
+	  </div>
+	</div>
+
+
+	<br />
         <div id="layout-content" style="margin-top:25px">
                 <table cellspacing="0">
                         <tbody>
@@ -130,7 +167,7 @@
 
 <h2 id="publication">Recent Projects &amp; Publications</h2>
 
-<div class="areatitle">Medical AI/ML</div>
+<div class="areatitle" id="AIML">Medical AI/ML</div>
 	<table width="961" border="0" cellpadding="2" cellspacing="10">
 		
 		
@@ -326,7 +363,7 @@ Segmentation of medical images with known ground truth is useful for investigati
           <!-- paper end -->
 	</table>
 
-<div class="areatitle">Transparent Deep Learning</div>
+<div class="areatitle" id="XAI">Transparent Deep Learning</div>
     
       <table width="961" border="0" cellpadding="2" cellspacing="10">
 		  
@@ -643,7 +680,7 @@ decision boundaries" width="180px" />
           
     </table>
 
-<div class="areatitle">Deep Learning Applications on Medical Images</div>
+<div class="areatitle" id="DLApp">Deep Learning Applications on Medical Images</div>
     
           <table width="961" border="0" cellpadding="2" cellspacing="10">
 			  
@@ -999,7 +1036,7 @@ health, helping clinicians diagnose retinal diseases with confusing features mor
         <h2 id="preprints">Past Researches</h2>
     
     
-<div class="areatitle">Hyperspectral Images-based Cardiac Ablation Lesion Detection</div>
+<div class="areatitle" id="Hyperspectral">Hyperspectral Images-based Cardiac Ablation Lesion Detection</div>
     
               <table width="961" border="0" cellpadding="2" cellspacing="10">
                   
@@ -1098,7 +1135,7 @@ improve clinical outcomes for atrial fibrillation patients.</p>
           
     </table>
     
-    <div class="areatitle">Climate (Frost Point) Data Collection and Analysis by R</div>
+    <div class="areatitle" id="FrostPoint">Climate (Frost Point) Data Collection and Analysis by R</div>
 
               <table width="961" border="0" cellpadding="2" cellspacing="10">
                   
@@ -1144,7 +1181,7 @@ improve clinical outcomes for atrial fibrillation patients.</p>
           
     </table>
     
-<div class="areatitle">Non-destructive Testing for Wooden Materials</div>
+<div class="areatitle" id="Wooden">Non-destructive Testing for Wooden Materials</div>
     
         
               <table width="961" border="0" cellpadding="2" cellspacing="10">
@@ -1431,14 +1468,14 @@ density is provided.</p>
         </table>
 
 <h2 id="conf">Presentations</h2>
-        <h4>Invited Talks</h4>
+        <h4 id="ivtalks">Invited Talks</h4>
         <ul>
             <li>Invited Speaker, FDA/CDRH/OSEL/DIDSR AI/ML Seminar, &quot;A Novel Intrinsic Measure of Data Separability – the Distance-based Separability Index (DSI) and its Applications&quot;, Online. (December 6, 2021)</li>
             <li>Invited Graduate Presentation for the GW BME Day, &quot;Introduce to an Intrinsic Measure of Data Separability – the Distance-based Separability Index (DSI)&quot;, Washington DC. (November 1, 2021)</li>
             <li>Invited Speaker, FDA/CDRH/OSEL/DIDSR Q&A and Special Topics, &quot;Analysis of Generalizability of Deep Neural Networks Based on the Complexity of Decision Boundary&quot;, Online. (May 27, 2021)</li>
         </ul>
     
-<h4>Conferences</h4>
+<h4 id="conftalks">Conferences</h4>
         <ul>
 			<li><a href="https://www.aipr-workshop.org/past-conference-information" target="_blank">52st IEEE Applied Imagery Pattern Recognition (AIPR)</a>, &quot;The training accuracy of two-layer neural networks: its estimation and understanding using random datasets&quot;, St. Louis, Missouri (September 2023)</li>
 			<li><a href="https://www.aipr-workshop.org/past-conference-information" target="_blank">51st IEEE Applied Imagery Pattern Recognition (AIPR)</a>, &quot;Informing selection of performance metrics for medical image segmentation evaluation using synthetic segmentations&quot;, Washington DC. (October 2022)</li>
@@ -1455,7 +1492,7 @@ density is provided.</p>
             <li><a href="https://www.aipr-workshop.org/past-conference-information" target="_blank">46th IEEE Applied Imagery Pattern Recognition (AIPR)</a>, &quot;Breast Cancer Detection Using Transfer Learning in Convolutional Neural Networks&quot;, Washington DC. (October 2017)</li>
         </ul>
     
-<h4>Others</h4>
+<h4 id="othertalks">Others</h4>
         <ul>
             <li>GW SEAS R&amp;D Showcase, &quot;A Novel Intrinsic Measure of Data Separability&quot;. (April 2022)</li>
             <li>Special Topic Lecture in Lab Meeting, &quot;Optimization and Troubleshooting in Machine Learning&quot;. (April 2022) [<a href="https://cpb-us-e1.wpmucdn.com/blogs.gwu.edu/dist/f/464/files/2022/04/Shuyue_Optimization-and-Troubleshooting-in-Machine-Learning.pdf">PDF</a>]</li>
