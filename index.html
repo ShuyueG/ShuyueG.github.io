@@ -218,6 +218,51 @@
 <div class="areatitle" id="AIML">Medical AI/ML</div>
 <table border="0" cellpadding="2" cellspacing="10" width="961">
 
+    <!-- paper strat -->
+    <tr>
+        <td valign="center" width="180">
+            <center>
+
+                <!-- Zoom in -->
+                <div class="img-hover-zoom">
+                    <img alt="Radiologists’ annotations of an LIDC-IDRI lesion along with the MV consensus, and the
+                    contour produced by our U-Net segemantation algorithm."
+                         class="myImg" src="imgs/Tingtint_fig6.jpg" width="180px"/>
+                </div>
+
+            </center>
+        </td>
+
+        <td valign="top" width="714">
+
+            <papertitle>Statistical testing of agreement in overlap-based performance between an AI segmentation device
+                and a multi-expert human panel without requiring a reference standard</papertitle>
+            <br/>
+            Tingting Hu, Berkman Sahiner, <b>Shuyue Guan</b>, Mike Mikailov, Kenny Cha, Frank Samuelson,
+            <br/>Nicholas Petrick <br/>
+            Journal of Medical Imaging (JMI), 2025<br/>
+            [<a href="https://doi.org/10.1117/1.JMI.12.5.055003" target="_blank">Paper</a>] [<a
+                href="doc/Tingting_manuscript.pdf" target="_blank">PDF</a>]
+
+            <button class="collapsible">Abstract</button>
+            <div class="content">
+                <p>
+                    <b>Purpose:</b>
+                    Artificial intelligence (AI)-based medical imaging devices often include lesion or organ segmentation capabilities. Existing methods for segmentation performance evaluation compare AI results with an aggregated reference standard using accuracy metrics such as the Dice coefficient or Hausdorff distance. However, these approaches are limited by lacking a gold standard and challenges in defining meaningful success criteria. To address this, we developed a statistical method to assess agreement between an AI device and multiple human experts without requiring a reference standard.
+                    <br/> <b> Approach:</b>
+                    We propose a paired-testing method to evaluate whether an AI device’s segmentation performance significantly differs from that of multiple human experts. The method compares device-to-expert dissimilarity with expert-to-expert dissimilarity, avoiding the need for a reference standard. We validated the method through (1) statistical simulations where the Dice coefficient performance is either shared (“overlap agreeable”) or not shared (“overlap disagreeable”) between the device and experts; (2) image-based simulations using 2D contours with shared or nonshared transformation parameters (transformation agreeable or disagreeable). We also applied the method to compare an AI segmentation algorithm with four radiologists using data from the Lung Image Database Consortium.
+                    <br/> <b>Results:</b>
+                    Statistical simulations show the method controls type I error (∼0.05) for overlap-agreeable and type II error (∼0) for overlap-disagreeable scenarios. Image-based simulations show acceptable performance with a mean type I error of 0.07 (SD 0.03) for transformation-agreeable and a mean type II error of 0.07 (SD 0.18) for transformation-disagreeable cases.
+                    <br/><b>Conclusions:</b>
+                    The paired-testing method offers a new tool for assessing the agreement between an AI segmentation device and multiple human expert panelists without requiring a reference standard.
+                </p>
+
+            </div>
+        </td>
+    </tr>
+    <!-- paper end -->
+
+
 
     <!-- paper strat -->
     <tr>
@@ -1785,6 +1830,9 @@ tested blockboards" class="myImg" src="imgs/paper_aiss2013.png" width="180px"/>
 
 <h4 id="conftalks">Conferences</h4>
 <ul>
+    <li><a href="https://www.aipr-workshop.org/" target="_blank">53rd IEEE Applied Imagery
+        Pattern Recognition (AIPR)</a>, &quot;Restorable Segmentation Synthesis Using Fourier Descriptors&quot;, Washington DC. (October 2025)
+    </li>
     <li><a href="https://ivpcl.unm.edu/SSIAI2024/index.html" target="_blank">2024 IEEE Southwest Symposium on Image
         Analysis and Interpretation (SSIAI)</a>, &quot;Restorable synthesis: average synthetic segmentation converges to
         a polygon approximation of an object contour in medical images&quot;, Santa Fe, New Mexico (March 2024)
