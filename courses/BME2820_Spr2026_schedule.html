@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>BME 2820 Course Schedule — Spring 2026</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 24px 20px;
+            color: #1a2c3e;
+        }
+        /* 主标题样式：居中，清晰美观 */
+        .course-main-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            color: #1e466e;
+            margin: 0 0 1.2rem 0;
+            padding-bottom: 0.25rem;
+            border-bottom: 3px solid #cbdde9;
+            display: inline-block;
+            width: 100%;
+        }
+        .schedule-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            overflow-x: auto;
+            padding: 4px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 880px;
+            background-color: #fff;
+            font-family: 'Arial', 'Helvetica', sans-serif;   /* 更改字体 */
+            font-size: 14px;                                 /* 字体大小 */
+            color: #1e2f3e;                                  /* 字体颜色 */
+        }
+        th {
+            background-color: #1e466e;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 14px 10px;
+            border: 1px solid #2c5985;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        td {
+            border: 1px solid #dce5ec;
+            padding: 12px 10px;
+            vertical-align: top;
+            background-color: #ffffff;
+            transition: background 0.1s ease;
+        }
+        tr:hover td {
+            background-color: #f8fbfe;
+        }
+        .week-col {
+            background-color: #f0f4f9;
+            font-weight: 600;
+            text-align: center;
+            width: 70px;
+        }
+        .date-col {
+            white-space: nowrap;
+            width: 110px;
+            font-weight: 500;
+            color: #0a4b6e;
+        }
+        .topic-col {
+            font-weight: 500;
+        }
+        .textbook-col {
+            color: #2c5a2e;
+            font-size: 0.85rem;
+        }
+        .deadline-col {
+            color: #b13e3e;
+            font-weight: 500;
+            background-color: #fff7f0;
+        }
+        .info-note {
+            background-color: #eef2fa;
+            font-style: italic;
+            color: #2c3e4e;
+        }
+        .merge-text {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+        .subnote {
+            background-color: #f9fafc;
+            color: #4a627a;
+        }
+        .textbook-row td, .ref-row td {
+            background-color: #fefcf5;
+        }
+        .footer-note {
+            background-color: #f8f3e0;
+            font-weight: normal;
+            text-align: center;
+        }
+        .small-meta {
+            font-size: 0.75rem;
+            color: #5e7a93;
+        }
+        .task-highlight {
+            font-weight: 600;
+            color: #c44536;
+        }
+        @media (max-width: 760px) {
+            body {
+                padding: 12px;
+            }
+            .course-main-title {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            td, th {
+                padding: 8px 6px;
+            }
+            .date-col {
+                white-space: normal;
+                min-width: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 居中的主标题：完全符合要求 “BME 2820 Course Schedule — Spring 2026” 放在最开始，居中 -->
+    <div class="course-main-title">BME 2820 Course Schedule — Spring 2026</div>
+
+    <div class="schedule-container">
+        <table>
+            <!-- 表头：完整保留原始列名 -->
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Class Date</th>
+                    <th>Topics</th>
+                    <th>Textbook</th>
+                    <th>Task & Due <br><span style="color: #F54927;">(All deadlines are SUNDAY at 11:59 PM)</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 第1周 (2行) -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>1</strong></td>
+                    <td class="date-col">1/13, Tuesday</td>
+                    <td class="topic-col" >Introduction to the class; install programs & set up the environment</td>
+                    <td class="textbook-col">Intro; Ch.1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="date-col">1/15, Thursday</td>
+                    <td class="topic-col">Introduction to Python; Basic Syntax (Lecture 1)</td>
+                    <td class="textbook-col">Ch.1</td>
+                    <td></td>
+                </tr>
+                <!-- 第2周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>2</strong></td>
+                    <td class="date-col">1/20, Tuesday</td>
+                    <td class="topic-col">Variables and Comments (Lecture 2)</td>
+                    <td class="textbook-col">Ch.2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="date-col">1/22, Thursday</td>
+                    <td class="topic-col"><strong>Quiz 1 (L1/L2)</strong>; Review Section</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第3周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>3</strong></td>
+                    <td class="date-col">1/27, Tuesday</td>
+                    <td class="topic-col">Data Types and Strings (Lecture 3)</td>
+                    <td class="textbook-col">Ch.2</td>
+                    <td class="deadline-col">Assignment 1 (Due: 2/1)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">1/29, Thursday</td>
+                    <td class="topic-col">Booleans, Operators, Lists (Lecture 4 - 1/2)</td>
+                    <td class="textbook-col">Ch.3, 4, 5</td>
+                    <td></td>
+                </tr>
+                <!-- 第4周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>4</strong></td>
+                    <td class="date-col">2/3, Tuesday</td>
+                    <td class="topic-col"><strong>Quiz 2 (L3)</strong>; Review Section</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Assignment 2 (Due: 2/8)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">2/5, Thursday</td>
+                    <td class="topic-col">Booleans, Operators, Lists (Lecture 4 - 2/2)</td>
+                    <td class="textbook-col">Ch.3, 4, 5</td>
+                    <td></td>
+                </tr>
+                <!-- 第5周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>5</strong></td>
+                    <td class="date-col">2/10, Tuesday</td>
+                    <td class="topic-col"><strong>Quiz 3 (L4)</strong>; Review Section</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="date-col">2/12, Thursday</td>
+                    <td class="topic-col">Dictionaries and Loops (Lecture 5)</td>
+                    <td class="textbook-col">Ch.6, 7</td>
+                    <td></td>
+                </tr>
+                <!-- 第6周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>6</strong></td>
+                    <td class="date-col">2/17, Tuesday</td>
+                    <td class="topic-col"><strong>Quiz 4 (L5)</strong>; Review Section</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Assignment 3 (Due: 2/22)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">2/19, Thursday</td>
+                    <td class="topic-col">Functions, Libraries (NumPy & matplotlib), and Data Analysis (Lecture 6)</td>
+                    <td class="textbook-col">Ch.8, 10</td>
+                    <td></td>
+                </tr>
+                <!-- 第7周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>7</strong></td>
+                    <td class="date-col">2/24, Tuesday</td>
+                    <td class="topic-col"><strong>Quiz 5 (L6)</strong>; Review Section</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Assignment 4 (Due: 3/1)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">2/26, Thursday</td>
+                    <td class="topic-col">Review Section for Midterm</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第8周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>8</strong></td>
+                    <td class="date-col">3/3, Tuesday</td>
+                    <td class="topic-col"><strong>Midterm Exam</strong></td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Assignment 5 (Due: 3/8)</td>
+                </tr>
+                <tr>
+                    <td class="date-col">3/5, Thursday</td>
+                    <td class="topic-col">Project #1 Introduction</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Project #1 Posted</td>
+                </tr>
+                <!-- 第9周 Spring Break (2行) -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5; color: #178236;"><strong>9</strong></td>
+                    <td class="date-col" style="color: #178236;">3/10, Tuesday</td>
+                    <td class="topic-col" style="color: #178236;">Spring Break (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="date-col" style="color: #178236;">3/12, Thursday</td>
+                    <td class="topic-col" style="color: #178236;">Spring Break (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第10周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>10</strong></td>
+                    <td class="date-col">3/17, Tuesday</td>
+                    <td class="topic-col">Install PyCharm; User-defined Libraries; Project #1 Work</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Project #1 Due: 3/22</td>
+                </tr>
+                <tr>
+                    <td class="date-col">3/19, Thursday</td>
+                    <td class="topic-col">Statistic (Lecture 7)</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第11周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>11</strong></td>
+                    <td class="date-col">3/24, Tuesday</td>
+                    <td class="topic-col">Create Projects in PyCharm; Project #2 Introduction</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Project #2 Posted</td>
+                </tr>
+                <tr>
+                    <td class="date-col">3/26, Thursday</td>
+                    <td class="topic-col">Review Section: Install and Configure Git with GitHub in PyCharm</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第12周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>12</strong></td>
+                    <td class="date-col">3/31, Tuesday</td>
+                    <td class="topic-col">LLM Usage (Lecture 8)</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Project #2 Due: 4/5</td>
+                </tr>
+                <tr>
+                    <td class="date-col">4/2, Thursday</td>
+                    <td class="topic-col">Review Section (AI Coding Agent: Kilo Code)</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第13周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>13</strong></td>
+                    <td class="date-col">4/7, Tuesday</td>
+                    <td class="topic-col">Team Project Introduction; Teamwork via GitHub; Final Grading Criteria Review</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Team Project Proposal Due: 4/12</td>
+                </tr>
+                <tr>
+                    <td class="date-col">4/9, Thursday</td>
+                    <td class="topic-col">Team Project Work</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第14周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>14</strong></td>
+                    <td class="date-col">4/14, Tuesday</td>
+                    <td class="topic-col">Debugging; Team Project Work</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Team Project Codes & PPT for Presentation Due: 4/19</td>
+                </tr>
+                <tr>
+                    <td class="date-col">4/16, Thursday</td>
+                    <td class="topic-col">Team Project Work</td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第15周 -->
+                <tr>
+                    <td class="week-col" rowspan="2" style="vertical-align: middle; background-color: #eef2f5;"><strong>15</strong></td>
+                    <td class="date-col">4/21, Tuesday</td>
+                    <td class="topic-col"><strong>Team Project Presentation</strong></td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="date-col">4/23, Thursday</td>
+                    <td class="topic-col"><strong>Team Project Presentation</strong></td>
+                    <td class="textbook-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第16周 (仅周二，单行) -->
+                <tr>
+                    <td class="week-col" style="vertical-align: middle; background-color: #eef2f5; color: #178236;"><strong>16</strong></td>
+                    <td class="date-col" style="color: #178236;">4/28, Tuesday</td>
+                    <td class="topic-col" style="color: #178236;">Official Make-Up Day (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td class="deadline-col">Team Project Report Due: 5/3</td>
+                </tr>
+                <!-- END 行 (单独一行，Week标记为END) -->
+                <tr>
+                    <td class="week-col" style="background-color: #e9ecef;">END</td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                </tr>
+                <!-- 空白分隔行（保留原风格） -->
+                <tr class="subnote">
+                    <td colspan="5" style="background-color: #ffffff; padding: 0;"></td>
+                </tr>
+                <tr class="footer-note">
+                    <td colspan="5" style="background-color: #fdf8e7; color: #193CB8; font-weight: bold; text-align: left; padding: 12px;">
+                        📌 The schedule and topics are subject to change.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="background-color: #ffffff; padding: 4px;"></td>
+                </tr>
+                <!-- 教科书信息行 -->
+                <tr class="textbook-row">
+                    <td style="background-color: #faf5e8; font-weight: 500;"><strong>Textbook</strong>:</td>
+                    <td colspan="3" style="background-color: #faf5e8;">Eric Matthes, <strong>Python Crash Course, 3rd Edition.</strong> No Starch Press, 2023</td>
+                    <td style="background-color: #faf5e8;"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="background-color: #ffffff; padding: 2px;"></td>
+                </tr>
+                <!-- Recommended Reference 行 -->
+                <tr class="ref-row">
+                    <td style="background-color: #faf5e8; font-weight: 500;">Recommended Reference:</td>
+                    <td colspan="3" style="background-color: #faf5e8;">Paul Barry, Head First Python, 3rd Edition. O'Reilly Media, Inc., 2023</td>
+                    <td style="background-color: #faf5e8;"></td>
+                </tr>
+                <tr class="small-meta">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

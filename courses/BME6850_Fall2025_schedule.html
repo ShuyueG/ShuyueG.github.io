@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>BME 6850 Course Schedule — Fall 2025</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 24px 20px;
+            color: #1a2c3e;
+        }
+        .course-main-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            color: #1e466e;
+            margin: 0 0 1.2rem 0;
+            padding-bottom: 0.25rem;
+            border-bottom: 3px solid #cbdde9;
+            display: inline-block;
+            width: 100%;
+        }
+        .schedule-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            overflow-x: auto;
+            padding: 4px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 1000px;
+            background-color: #fff;
+            font-family: 'Arial', 'Helvetica', sans-serif;   /* 更改字体 */
+            font-size: 14px;                                 /* 字体大小 */
+            color: #1e2f3e;                                  /* 字体颜色 */
+        }
+        th {
+            background-color: #1e466e;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 14px 10px;
+            border: 1px solid #2c5985;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        td {
+            border: 1px solid #dce5ec;
+            padding: 12px 10px;
+            vertical-align: top;
+            background-color: #ffffff;
+            transition: background 0.1s ease;
+        }
+        tr:hover td {
+            background-color: #f8fbfe;
+        }
+        .week-col {
+            background-color: #f0f4f9;
+            font-weight: 600;
+            text-align: center;
+            min-width: 10px;
+            width: 5%;
+        }
+        .date-col {
+            white-space: nowrap;
+            width: 110px;
+            font-weight: 500;
+            color: #0a4b6e;
+        }
+        .topic-col {
+            font-weight: 500;
+        }
+        .textbook-col {
+            font-size: 0.85rem;
+            color: #2c5a2e;
+            min-width: 100px;
+            width: 8%;
+        }
+        .reading-col {
+            font-size: 0.85rem;
+            color: #2c5a2e;
+            min-width: 120px;
+            width: 10%;
+        }
+        .deadline-col {
+            color: #b13e3e;
+            font-weight: 500;
+            background-color: #fff7f0;
+        }
+        .footer-note {
+            background-color: #f8f3e0;
+            font-weight: normal;
+            text-align: center;
+        }
+        .small-meta {
+            font-size: 0.75rem;
+            color: #5e7a93;
+        }
+        .ref-row td, .textbook-row td {
+            background-color: #fefcf5;
+        }
+        @media (max-width: 760px) {
+            body {
+                padding: 12px;
+            }
+            .course-main-title {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            td, th {
+                padding: 8px 6px;
+            }
+            .date-col {
+                white-space: normal;
+                min-width: 85px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="course-main-title">BME 6850 Course Schedule — Fall 2025</div>
+
+    <div class="schedule-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Textbook</th>
+                    <th>Reading*</th>
+                    <th>Task & Due<br><span style="color: #F54927;">(All deadlines are FRIDAY at 5 PM)</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 第1周 -->
+                <tr>
+                    <td class="week-col"><strong>1</strong></td>
+                    <td class="date-col">8/28, Thursday</td>
+                    <td class="topic-col">Introduction: History and examples of machine-learning (ML) applications.
+                        <br>ML experiments, Part 1: Design and resampling methods.</td>
+                    <td class="textbook-col">Ch. 1; <br>Ch. 20.1-20.6</td>
+                    <td class="reading-col">PC: Ch. 1<br>ISL: Ch. 5</td>
+                    <td></td>
+                </tr>
+                <!-- 第2周 -->
+                <tr>
+                    <td class="week-col"><strong>2</strong></td>
+                    <td class="date-col">9/4, Thursday</td>
+                    <td class="topic-col">Supervised learning: Multiple classes. Regression. Model selection and generalization.</td>
+                    <td class="textbook-col">Ch. 2</td>
+                    <td class="reading-col">ISL: Ch. 2.1.3-2.1.5<br>ISL: Ch. 3.1-3.2</td>
+                    <td></td>
+                </tr>
+                <!-- 第3周 -->
+                <tr>
+                    <td class="week-col"><strong>3</strong></td>
+                    <td class="date-col">9/11, Thursday</td>
+                    <td class="topic-col">Bayesian decision theory: Classification, risk, and discriminant functions. Naive Bayes.</td>
+                    <td class="textbook-col">Ch. 3</td>
+                    <td class="reading-col">PC: Ch. 2.1-2.3</td>
+                    <td class="deadline-col">Start thinking/planning your course project and writing project proposal; Homework #1 posted</td>
+                </tr>
+                <!-- 第4周 -->
+                <tr>
+                    <td class="week-col"><strong>4</strong></td>
+                    <td class="date-col">9/18, Thursday</td>
+                    <td class="topic-col">Parametric methods: Maximum likelihood. Bias and variance. Bayes estimator. Classification. Regression. Model selection.</td>
+                    <td class="textbook-col">Ch. 4</td>
+                    <td class="reading-col">PC: Ch. 3.1-3.5</td>
+                    <td></td>
+                </tr>
+                <!-- 第5周 -->
+                <tr>
+                    <td class="week-col"><strong>5</strong></td>
+                    <td class="date-col">9/25, Thursday</td>
+                    <td class="topic-col">Multivariate methods: Parameter estimation. Missing values. Multivariate normal.
+                        <br>Classification and regression.</td>
+                    <td class="textbook-col">Ch. 5</td>
+                    <td class="reading-col">PC: Ch. 2.4-2.6<br>ISL: Ch. 4.3-4.4</td>
+                    <td class="deadline-col">Homework #1 due; Homework #2 posted</td>
+                </tr>
+                <!-- 第6周 -->
+                <tr>
+                    <td class="week-col"><strong>6</strong></td>
+                    <td class="date-col">10/2, Thursday</td>
+                    <td class="topic-col">Dimensionality reduction: Principal component analysis (PCA). Embedding. Factor analysis. Singular value decomposition. Multidimensional scaling. Linear discriminant analysis. t-SNE. Applications.</td>
+                    <td class="textbook-col">Ch. 6</td>
+                    <td class="reading-col">PC: Ch. 3.7-3.8<br>ISL: Ch. 6; 12.2</td>
+                    <td class="deadline-col">Project Proposal due</td>
+                </tr>
+                <!-- 第7周 Fall Break -->
+                <tr>
+                    <td class="week-col" style="color: #178236;"><strong>7</strong></td>
+                    <td class="date-col" style="color: #178236;">10/9, Thursday</td>
+                    <td class="topic-col" style="color: #178236;">Fall Break (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td class="reading-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第8周 -->
+                <tr>
+                    <td class="week-col"><strong>8</strong></td>
+                    <td class="date-col">10/16, Thursday</td>
+                    <td class="topic-col">Clustering: Mixture densities. k-means. EM algorithm. Spectral and hierarchical methods.
+                        <br>ML experiments, Part 2: Evaluation: measuring and comparing performance.</td>
+                    <td class="textbook-col">Ch. 7; <br>Ch. 20.7-20.15</td>
+                    <td class="reading-col">PC: Ch. 3.9<br>ISL: Ch. 12.4</td>
+                    <td class="deadline-col">Homework #2 due; Homework #3 posted</td>
+                </tr>
+                <!-- 第9周 -->
+                <tr>
+                    <td class="week-col"><strong>9</strong></td>
+                    <td class="date-col">10/23, Thursday</td>
+                    <td class="topic-col">Nonparametric methods: Density estimation and extension to multivariate data. Classification. Nearest neighbor. Regression.</td>
+                    <td class="textbook-col">Ch. 8</td>
+                    <td class="reading-col">PC: Ch. 4.1-4.6</td>
+                    <td></td>
+                </tr>
+                <!-- 第10周 -->
+                <tr>
+                    <td class="week-col"><strong>10</strong></td>
+                    <td class="date-col">10/30, Thursday</td>
+                    <td class="topic-col">Decision trees: Classification. Regression. Pruning. Multivariate trees. Linear discrimination: Generalizing the linear model. Geometry. Parametric discrimination. Logistic discrimination. Applications.</td>
+                    <td class="textbook-col">Chs. 9, 10</td>
+                    <td class="reading-col">PC: Ch. 5.1-5.4<br>ISL: Ch. 8.1</td>
+                    <td></td>
+                </tr>
+                <!-- 第11周 -->
+                <tr>
+                    <td class="week-col"><strong>11</strong></td>
+                    <td class="date-col">11/6, Thursday</td>
+                    <td class="topic-col">Multilayer perceptrons:  Introduction and background. Training. Deep Learning, Part 1: Multilayer. Backpropagation. Overtraining. Autoencoders. Fully connected neural networks (FCNNs).</td>
+                    <td class="textbook-col">Ch. 11</td>
+                    <td class="reading-col">PC: Ch. 6.1-6.4<br>ISL: Ch. 10.1-10.2</td>
+                    <td class="deadline-col">Homework #3 due; Homework #4 Posted</td>
+                </tr>
+                <!-- 第12周 -->
+                <tr>
+                    <td class="week-col"><strong>12</strong></td>
+                    <td class="date-col">11/13, Thursday</td>
+                    <td class="topic-col">Deep Learning, Part 2: Multiple hidden layers. Regularization. Convolutional layers and image analysis. Learning sequences. Generative adversarial networks (GANs). Transformer models. Applications.</td>
+                    <td class="textbook-col">Ch. 12</td>
+                    <td class="reading-col">PC: Ch. 6.8; 6.10<br>ISL: Ch. 10.3; 10.7</td>
+                    <td class="deadline-col">Progress Report due</td>
+                </tr>
+                <!-- 第13周 -->
+                <tr>
+                    <td class="week-col"><strong>13</strong></td>
+                    <td class="date-col">11/20, Thursday</td>
+                    <td class="topic-col">Kernel machines: Optimal hyperplanes. SVM. Kernel trick. Multiple and multiclass kernels. Regression. Kernel Dimensionality Reduction.</td>
+                    <td class="textbook-col">Ch. 14</td>
+                    <td class="reading-col">PC: Ch. 5.11<br>ISL: Ch. 9</td>
+                    <td class="deadline-col">Homework #4 due</td>
+                </tr>
+                <!-- 第14周 Thanksgiving Break -->
+                <tr>
+                    <td class="week-col" style="color: #178236;"><strong>14</strong></td>
+                    <td class="date-col" style="color: #178236;">11/27, Thursday</td>
+                    <td class="topic-col" style="color: #178236;">Thanksgiving Break (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td class="reading-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第15周 -->
+                <tr>
+                    <td class="week-col"><strong>15</strong></td>
+                    <td class="date-col">12/4, Thursday</td>
+                    <td class="topic-col">Combining multiple learners: Generating diverse learners. Methods for combining. Voting. Bagging Boosting. Fine-tuning and cascading. Reinforcement learning.</td>
+                    <td class="textbook-col">Ch. 18</td>
+                    <td class="reading-col">PC: Ch. 9.5-9.7<br>ISL: Ch. 8.2</td>
+                    <td></td>
+                </tr>
+                <!-- 第16周 -->
+                <tr>
+                    <td class="week-col"><strong>16</strong></td>
+                    <td class="date-col">12/9, Tuesday</td>
+                    <td class="topic-col"><strong>Presentation of term projects</strong></td>
+                    <td class="textbook-col"></td>
+                    <td class="reading-col"></td>
+                    <td></td>
+                </tr>
+                <!-- 第17周 Final exam -->
+                <tr>
+                    <td class="week-col"><strong>17</strong></td>
+                    <td class="date-col">12/16, Tuesday</td>
+                    <td class="topic-col"><strong>Final exam</strong></td>
+                    <td class="textbook-col"></td>
+                    <td class="reading-col"></td>
+                    <td class="deadline-col">5:20 pm - 8:20 pm in PHIL 109</td>
+                </tr>
+                <!-- 第18周 Term Project Report Due -->
+                <tr>
+                    <td class="week-col" style="color: #178236;"><strong>18</strong></td>
+                    <td class="date-col" style="color: #178236;">12/19, Friday</td>
+                    <td class="topic-col" style="color: #178236;"><strong>Term Project (final) Report Due</strong> (no class)</td>
+                    <td class="textbook-col"></td>
+                    <td class="reading-col"></td>
+                    <td class="deadline-col">Due at 5 pm on the day. No late submission.</td>
+                </tr>
+                <!-- END 行 (单独一行，Week标记为END) -->
+                <tr>
+                    <td class="week-col" style="background-color: #e9ecef;">END</td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                    <td style="background-color: #e9ecef;"></td>
+                </tr>
+                <!-- 注意事项，粗体深蓝色 -->
+                <tr class="footer-note">
+                    <td colspan="6" style="background-color: #fdf8e7; color: #193CB8; font-weight: bold; text-align: left; padding: 12px;">
+                        📌 The schedule is subject to changes and adjustments.
+                    </td>
+                </tr>
+                <tr><td colspan="6" style="padding: 2px; background-color: #ffffff;"></td></tr>
+                <!-- 教科书信息 -->
+                <tr class="textbook-row">
+                    <td style="background-color: #faf5e8; font-weight: 500;"></td>
+                    <td colspan="5" style="background-color: #faf5e8;"><strong>Textbook:</strong><br>E. Alpaydin, <strong>Introduction to Machine Learning, 4th Edition.</strong> The MIT Press, 2020</td>
+                </tr>
+                <tr><td colspan="6" style="padding: 2px; background-color: #ffffff;"></td></tr>
+                <!-- Readings 参考 -->
+                <tr class="ref-row">
+                    <td style="background-color: #faf5e8; font-weight: 500;"></td>
+                    <td colspan="5" style="background-color: #faf5e8;"><strong>*Readings</strong> refer to the recommended references:
+                    <br><strong>▪ ISL:</strong> G. James, D. Witten, T. Hastie, and R. Tibshirani, An Introduction to Statistical Learning: with Applications in Python. Springer, 2023
+                    <br><strong>▪ PC:</strong>  R.O. Duda, P.E. Hart, and D. G. Stork, Pattern Classification, 2nd Edition. Wiley, 2001
+                    </td>
+                </tr>
+                <tr class="small-meta">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
