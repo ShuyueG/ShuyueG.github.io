@@ -4,131 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>BME 6850 Course Schedule — Fall 2025</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background-color: #f2f5f9;
-            margin: 0;
-            padding: 24px 20px;
-            color: #1a2c3e;
-        }
-        .course-main-title {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 600;
-            letter-spacing: -0.3px;
-            color: #1e466e;
-            margin: 0 0 1.2rem 0;
-            padding-bottom: 0.25rem;
-            border-bottom: 3px solid #cbdde9;
-            display: inline-block;
-            width: 100%;
-        }
-        .schedule-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-            overflow-x: auto;
-            padding: 4px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9rem;
-            min-width: 1000px;
-            background-color: #fff;
-            font-family: 'Arial', 'Helvetica', sans-serif;   /* 更改字体 */
-            font-size: 14px;                                 /* 字体大小 */
-            color: #1e2f3e;                                  /* 字体颜色 */
-        }
-        th {
-            background-color: #1e466e;
-            color: white;
-            font-weight: 600;
-            font-size: 0.9rem;
-            padding: 14px 10px;
-            border: 1px solid #2c5985;
-            text-align: center;
-            letter-spacing: 0.3px;
-        }
-
-        td {
-            border: 1px solid #dce5ec;
-            padding: 12px 10px;
-            vertical-align: top;
-            background-color: #ffffff;
-            transition: background 0.1s ease;
-        }
-        tr:hover td {
-            background-color: #f8fbfe;
-        }
-        .week-col {
-            background-color: #f0f4f9;
-            font-weight: 600;
-            text-align: center;
-            min-width: 10px;
-            width: 5%;
-        }
-        .date-col {
-            white-space: nowrap;
-            width: 110px;
-            font-weight: 500;
-            color: #0a4b6e;
-        }
-        .topic-col {
-            font-weight: 500;
-        }
-        .textbook-col {
-            font-size: 0.85rem;
-            color: #2c5a2e;
-            min-width: 100px;
-            width: 8%;
-        }
-        .reading-col {
-            font-size: 0.85rem;
-            color: #2c5a2e;
-            min-width: 120px;
-            width: 10%;
-        }
-        .deadline-col {
-            color: #b13e3e;
-            font-weight: 500;
-            background-color: #fff7f0;
-        }
-        .footer-note {
-            background-color: #f8f3e0;
-            font-weight: normal;
-            text-align: center;
-        }
-        .small-meta {
-            font-size: 0.75rem;
-            color: #5e7a93;
-        }
-        .ref-row td, .textbook-row td {
-            background-color: #fefcf5;
-        }
-        @media (max-width: 760px) {
-            body {
-                padding: 12px;
-            }
-            .course-main-title {
-                font-size: 1.6rem;
-                margin-bottom: 1rem;
-            }
-            td, th {
-                padding: 8px 6px;
-            }
-            .date-col {
-                white-space: normal;
-                min-width: 85px;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="BME6850_Fall2025_schedule.css">
 </head>
 <body>
     <div class="course-main-title">BME 6850 Course Schedule — Fall 2025</div>
@@ -150,8 +26,7 @@
                 <tr>
                     <td class="week-col"><strong>1</strong></td>
                     <td class="date-col">8/28, Thursday</td>
-                    <td class="topic-col">Introduction: History and examples of machine-learning (ML) applications.
-                        <br>ML experiments, Part 1: Design and resampling methods.</td>
+                    <td class="topic-col">Introduction: History and examples of machine-learning (ML) applications. ML experiments, Part 1: Design and resampling methods.</td>
                     <td class="textbook-col">Ch. 1; <br>Ch. 20.1-20.6</td>
                     <td class="reading-col">PC: Ch. 1<br>ISL: Ch. 5</td>
                     <td></td>
@@ -187,8 +62,7 @@
                 <tr>
                     <td class="week-col"><strong>5</strong></td>
                     <td class="date-col">9/25, Thursday</td>
-                    <td class="topic-col">Multivariate methods: Parameter estimation. Missing values. Multivariate normal.
-                        <br>Classification and regression.</td>
+                    <td class="topic-col">Multivariate methods: Parameter estimation. Missing values. Multivariate normal. Classification and regression.</td>
                     <td class="textbook-col">Ch. 5</td>
                     <td class="reading-col">PC: Ch. 2.4-2.6<br>ISL: Ch. 4.3-4.4</td>
                     <td class="deadline-col">Homework #1 due; Homework #2 posted</td>
@@ -215,8 +89,7 @@
                 <tr>
                     <td class="week-col"><strong>8</strong></td>
                     <td class="date-col">10/16, Thursday</td>
-                    <td class="topic-col">Clustering: Mixture densities. k-means. EM algorithm. Spectral and hierarchical methods.
-                        <br>ML experiments, Part 2: Evaluation: measuring and comparing performance.</td>
+                    <td class="topic-col">Clustering: Mixture densities. k-means. EM algorithm. Spectral and hierarchical methods. ML experiments, Part 2: Evaluation: measuring and comparing performance.</td>
                     <td class="textbook-col">Ch. 7; <br>Ch. 20.7-20.15</td>
                     <td class="reading-col">PC: Ch. 3.9<br>ISL: Ch. 12.4</td>
                     <td class="deadline-col">Homework #2 due; Homework #3 posted</td>
